@@ -4,7 +4,7 @@ using UnityEngine.Pool;
 
 namespace Scripts.EventBus
 {
-    public class EventBusService
+    public class EventBusService : IEventBusService
     {
         private readonly Dictionary<EventBusBindID, EventBusBindInfo> _bindings;
         private readonly ObjectPool<EventListenersIterator> _iteratorsPool;
